@@ -109,22 +109,72 @@ nav h1 a {
     }
 }
 
+@media screen and (max-width: 500px) {
+    #map {
+        height: 250px;
+    }
+}
+
+@media screen and (min-width: 501px) {
+    #map {
+        height: 400px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #restaurants-list {
+        padding: 0px 15px 60px;
+        }
+}
+
 @media screen and (min-width: 601px) {
     #restaurants-list li {
         background-color: #fff;
         border: 2px solid #ccc;
         font-family: Arial,sans-serif;
         margin: 15px;
-        min-height: 380px;
-        padding: 0 30px 25px;
-        text-align: left;
-        width: 300px;
-}
+        min-height: 350px;
+    }
+    
+    #restaurants-list {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    li {
+        width: 33%;
+    }
+    
+    ul#restaurants-list {
+        padding-left: 0;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    #restaurants-list .restaurant-img {
+       
+    }
 }
 
+@media screen and (min-width: 1000px) {
+    ul#restaurants-list {
+        padding-left: 0;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    body {
+        width: 1000px;
+        margin: auto;
+    }
+    
+    #restaurants-list li {
+        width: 350px;
+    }
+    
+}
 /* ====================== Map ====================== */
 #map {
-  height: 400px;
   width: 100%;
   background-color: #ccc;
 }
@@ -165,8 +215,7 @@ nav h1 a {
 #restaurants-list {
   background-color: #f3f3f3;
   list-style: outside none none;
-  margin: 0;
-  padding: 0px 15px 60px;
+  margin-top: 0;
   text-align: center;
 }
 #restaurants-list li {
@@ -174,19 +223,16 @@ nav h1 a {
   border: 2px solid #ccc;
   font-family: Arial,sans-serif;
   margin: 15px;
-  min-height: 380px;
   padding: 0 30px 25px;
   text-align: left;
   width: 50%px;
 }
 #restaurants-list .restaurant-img {
-  background-color: #ccc;
   display: block;
   margin: 0;
   max-width: 100%;
-  min-height: 100%;
-    max-height: 360px;
   min-width: 100%;
+     padding-top: 10px;
 }
 #restaurants-list li h1 {
   color: #f18200;
