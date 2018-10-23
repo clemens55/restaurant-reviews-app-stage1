@@ -6,7 +6,18 @@ var newMap;
  */
 document.addEventListener('DOMContentLoaded', (event) => {  
   initMap();
+    loadMeta();
 });
+
+
+//Add the meta data in header
+function loadMeta() {
+    var meta = document.createElement('meta');
+    meta.name = "viewport";
+    meta.content = "width=device-width, initial-scale=1.0";
+    document.getElementsByTagName('head')[0].appendChild(meta);
+}
+
 
 /**
  * Initialize leaflet map
