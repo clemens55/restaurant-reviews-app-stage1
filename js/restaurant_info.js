@@ -18,6 +18,20 @@ function loadMeta() {
     document.getElementsByTagName('head')[0].appendChild(meta);
 }
 
+//Sticky scroll down header
+window.onscroll = function() {myFunction()};
+
+var header = document.getElementById("breadcrumb");
+var sticky = header.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}
+
 
 /**
  * Initialize leaflet map

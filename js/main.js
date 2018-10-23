@@ -13,6 +13,20 @@ document.addEventListener('DOMContentLoaded', (event) => {
   fetchCuisines();
 });
 
+//Sticky scroll down header
+window.onscroll = function() {myFunction()};
+
+var header = document.getElementById("filter");
+var sticky = header.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky1");
+  } else {
+    header.classList.remove("sticky1");
+  }
+}
+
 /**
  * Fetch all neighborhoods and set their HTML.
  */

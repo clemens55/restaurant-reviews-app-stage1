@@ -74,6 +74,7 @@ nav h1 a {
     background-color: #eee;
     font-size: 17px;
     margin: 0;
+    z-index: 100;
 }
 
 /* Display list items side by side */
@@ -114,7 +115,8 @@ nav h1 a {
   width: 100%;
   background-color: #3397DB;
   align-items: center;
-        text-align: center;
+    text-align: center;
+    z-index: 100;
 
 }
 .filter-options h2 {
@@ -199,9 +201,11 @@ nav h1 a {
 .inside #map-container {
   background: blue none repeat scroll 0 0;
   right: 0;
+    z-index: 50;
 }
 .inside #map {
   background-color: #ccc;
+    z-index: 50;
 }
 .inside #footer {
   bottom: 0;
@@ -297,6 +301,13 @@ nav h1 a {
     .inside #map {
         height: 400px;
     }
+    #restaurant-img {
+        width: 460px; 
+        min-width: 0px;
+    }
+    #restaurant-cuisine {
+        width: 420px;
+    }
 }
 
 @media screen and (max-width: 600px) {
@@ -350,18 +361,37 @@ nav h1 a {
         width: 350px;
     }
     
+    .sticky1 {
+        width: 1000px;
+    }
+    
+    .sticky {
+        width: 920px;
+    }
+}
+
+@media screen and (max-width: 999px) {
+    .sticky1 {
+        width: 100%;
+    }
+    
+    .sticky {
+        width: 100%;
+    }
 }
 
 @media screen and (min-width: 850px) {
     .inside #map {
         height: 100%;
     }
+    
     .inside #map-container {
         width: 50%;
         order: 2;
         height: 500px;
         margin: auto;
         }
+    
     #restaurant-container {
         width: 42%;
         order: 1;
@@ -369,6 +399,7 @@ nav h1 a {
         border-bottom: 0;
         padding-right: 5px;
     }
+    
     #reviews-container {
         order: 3;
     }
@@ -377,7 +408,27 @@ nav h1 a {
         flex-wrap: wrap;
         border-top: 1px solid #fff;
     }
+    
     #reviews-container {
     border-top: 1px solid #d9d9d9;
+    }
+    
+    #restaurant-img {
+        width: 100%; 
+        min-width: 100%;
+    }
+    #restaurant-cuisine {
+        width: 90%;
+    }
 }
+
+/* Sticky header */
+.sticky {
+  position: fixed;
+  top: 0;
+}
+
+.sticky1 {
+  position: fixed;
+  top: 0;
 }
