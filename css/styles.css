@@ -251,7 +251,7 @@ nav h1 a {
   padding: 20px 40px 30px;
 }
 #reviews-container {
-  padding: 30px 40px 80px;
+  padding: 30px 40px 30px;
 }
 #reviews-container h2 {
   color: #f58500;
@@ -437,26 +437,38 @@ nav h1 a {
 .review-name {
     background-color: #333;
     color: white;
-    font-size: 12pt;
-    font-weight: 300;
+    font-size: 14pt;
     letter-spacing: 1px;
-    width: 150px;
-    text-align: center;
-    border-radius: 15px;
-    margin-top: 5px;
+    padding-left: 60px;
+    padding-top: 3px;
+    padding-bottom: 3px;
 }
 
 #reviews-container li {
-    border-radius: 30px 0 0 0;
+    border-radius: 15px 0px 50px;
+    padding: 0;
 }
 
 .review-date {
     font-weight: bold;
+    padding-left: 10px;
+    color: #90959a;
 }
 
 .review-rating {
     font-weight: bold;
     text-transform: uppercase;
-    color: #f58500;
-    font-size: 12pt;
+    color: white;
+    background-color: #f58500;
+    font-size: 10pt;
+    width: 100px;
+    text-align: center;
+    border-radius: 5px;
+    letter-spacing: 1px;
+}
+
+.review-comments {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 10px;
 }
