@@ -167,7 +167,7 @@ nav h1 a {
     padding-top: 10px;
     border-radius: 0px 30px 10px 30px;
 }
-#restaurants-list li h1 {
+#restaurants-list li h2 {
   color: #f18200;
   font-family: Arial,sans-serif;
   font-size: 14pt;
@@ -472,3 +472,4 @@ nav h1 a {
     padding-right: 20px;
     padding-bottom: 10px;
 }
+
